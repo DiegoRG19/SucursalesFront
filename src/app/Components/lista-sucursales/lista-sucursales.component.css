@@ -1,0 +1,79 @@
+.label{
+  width: 50%;
+}
+
+.content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Asegura que los bordes se unan */
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Bordes para las celdas */
+  padding: 10px; /* Espaciado interno en las celdas */
+  text-align: left; /* Alineación del texto */
+}
+
+th {
+  background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  font-weight: bold; /* Negrita para los encabezados */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Color de fondo alternativo para filas */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Color al pasar el ratón sobre la fila */
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block; /* Hacer la tabla responsiva en pantallas pequeñas */
+  }
+
+  th {
+    position: absolute;
+    top: -9999px; /* Esconder encabezados en vista móvil */
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%; /* Espaciado para el contenido en dispositivos móviles */
+  }
+
+  td:before {
+    position: absolute;
+    left: 0;
+    width: 50%; /* Ancho para el pseudo-elemento */
+    padding-left: 10px; /* Espaciado interno */
+    white-space: nowrap; /* No permitir salto de línea */
+    font-weight: bold; /* Negrita para las etiquetas */
+  }
+}
+
+.button{
+  margin-right: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 3px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spacing{
+  margin-right: 20px;
+  margin-left: 10px;
+}
